@@ -1,0 +1,5 @@
+; <?php die; __halt_compiler();
+
+[core]
+; By default: Off
+event.debug = On

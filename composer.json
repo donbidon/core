@@ -1,0 +1,36 @@
+{
+    "name": "donbidon/core",
+    "type": "library",
+    "description": "Small library implementing registry, logging and events",
+    "homepage": "https://bitbucket.org/donbidon/core",
+    "keywords": ["php", "core", "registry", "events", "logging"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name":     "donbidon",
+            "homepage": "http://donbidon.rf.gd/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable":      true,
+    "require": {
+        "php":                 ">=5.5.0",
+        "donbidon/lib-config": "dev-develop",
+        "donbidon/lib-array":  "dev-develop",
+        "donbidon/lib-fs":     "dev-develop"
+    },
+    "require-dev": {
+        "php":                 ">=7.1.0",
+        "donbidon/lib-phpunit": "dev-develop"
+    },
+    "autoload": {
+        "psr-4": {
+             "donbidon\\Core\\": "src"
+         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+             "donbidon\\Core\\":  ["tests", "tests/src"]
+         }
+    }
+}
